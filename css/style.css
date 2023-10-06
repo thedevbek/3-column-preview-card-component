@@ -1,0 +1,131 @@
+/* Reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/* From Frontend Mentor */
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+/* ********************** */
+
+/* Global Styles */
+body {
+	background-color: hsl(0, 0%, 95%);
+	margin: 0;
+}
+
+/* Typography */
+h2 {
+	font-family: 'Big Shoulders Display', cursive, sans-serif;
+	font-size: 2.5rem;
+	padding-bottom: 30px;
+	text-transform: uppercase;
+	color: hsl(0, 0%, 95%);
+	font-weight: 600;
+}
+
+/* Images */
+img {
+	padding-top: 30px;
+	padding-bottom: 5px;
+}
+
+/* Layout */
+.flex-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+/* Card Styles */
+.item {
+	height: 450px;
+	width: 250px;
+	font-family: 'Lexend Deca', sans-serif;
+	text-align: left;
+	padding: 0 30px;
+	line-height: 1.5;
+	font-size: 15px;
+}
+
+/* Card Background Colors */
+.sedans {
+	background-color: hsl(31, 77%, 52%);
+	color: hsla(0, 0%, 100%, 0.75);
+	border-radius: 5px 0 0 5px; /* Rounded left corners */
+}
+
+.suv p {
+	margin-bottom: 20px;
+}
+
+.suv {
+	background-color: hsl(184, 100%, 22%);
+	color: hsla(0, 0%, 100%, 0.75);
+}
+
+.luxury {
+	background-color: hsl(179, 100%, 13%);
+	color: hsla(0, 0%, 100%, 0.75);
+	border-radius: 0 5px 5px 0; /*Rounded right corners */
+}
+
+/* Button Styles */
+.btn {
+	margin-top: 50px;
+	background-color: transparent;
+	color: hsla(0, 0%, 100%, 0.75);
+	border: 2px solid hsla(0, 0%, 100%, 0.75);
+	padding: 10px 20px;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+/* Media query */
+@media (max-width: 768px) {
+	.flex-container {
+		flex-direction: column;
+		padding: 0;
+	}
+    
+	.item {
+		height: 400px;
+		padding: 0;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+		text-align: center;
+		padding-bottom: 0;
+        margin-bottom: 5px;
+	}
+	body {
+		margin-top: 10px;
+	}
+	.suv p {
+        margin-bottom: 0px;
+    }
+	.btn {
+		padding: 5px 20px;
+		margin: 30px 0 ;
+	}
+	.sedans {
+		border-radius: 0;
+	}
+	.luxury {
+		border-radius: 0;
+	}
+    footer {
+        margin-top: 10px;
+    }
+}
